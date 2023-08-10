@@ -37,28 +37,28 @@
       "id": 98443197
     },
     {
-      "cityName": "Roqueseriere",
-      "country": "France",
-      "emoji": "FR",
-      "date": "2023-08-09T22:50:32.346Z",
+      "cityName": "Þingeyjarsveit",
+      "country": "Iceland",
+      "emoji": "IS",
+      "date": "2023-08-10T11:05:40.335Z",
       "notes": "",
       "position": {
-        "lat": "43.707741845646794",
-        "lng": "1.6431957638952268"
+        "lat": "65.29626131830862",
+        "lng": "-16.799109568066264"
       },
-      "id": 98443198
+      "id": 98443202
     },
     {
-      "cityName": "Balot",
-      "country": "France",
-      "emoji": "FR",
-      "date": "2023-08-09T22:50:37.983Z",
+      "cityName": "El Menzel",
+      "country": "Morocco",
+      "emoji": "MA",
+      "date": "2023-08-10T11:19:04.803Z",
       "notes": "",
       "position": {
-        "lat": "47.813075012088426",
-        "lng": "4.43319607213891"
+        "lat": "33.89121888731584",
+        "lng": "-4.224608202358372"
       },
-      "id": 98443199
+      "id": 98443207
     }
   ]
 }
