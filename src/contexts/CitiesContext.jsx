@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, useContext, useEffect, useReducer } from "react";
+import { createContext, useCallback, useContext, useEffect, useReducer } from "react";
 import PropTypes from "prop-types";
 
 const CitiesContext = createContext();
@@ -66,7 +66,7 @@ function CitiesProvider({ children }) {
       });
   }, []);
 
-  function getCity(id) {
+  const getCity= useCallback( function getCity(id) {
     // check if the city we wanna load is the same as current city and do nothing in this case (don't send a request)
     if(Number(id)===currentCity.id) return;
 
@@ -79,7 +79,7 @@ function CitiesProvider({ children }) {
       .catch(() => {
         dispatch({type:"rejected", payload:"there was an error loading the city..."})
       });
-  }
+  }, [currentCity.id])
 
   async function createCity(newCity) {
     dispatch({type:"loading"});
